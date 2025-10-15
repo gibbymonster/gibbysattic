@@ -1,0 +1,31 @@
+/* styles.css - gibby's attic store edition */
+:root{--bg:#0b0f18;--card:#0f1724;--accent:#9be15d;--muted:#9aa4b2;--glass:rgba(255,255,255,0.03);--accent-dark:#6fbf3b}
+*{box-sizing:border-box}html,body{height:100%;margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Arial;background:linear-gradient(180deg,#070913,#0d1220);color:#e7f2e6}
+a{color:inherit}img{max-width:100%;height:auto;display:block;border-radius:8px}
+.header{display:flex;align-items:center;justify-content:space-between;padding:14px 22px;background:rgba(255,255,255,0.02);backdrop-filter:blur(6px);position:sticky;top:0;z-index:40;border-bottom:1px solid rgba(255,255,255,0.03)}
+.brand{display:flex;align-items:center;gap:12px}
+.logo{width:44px;height:44px;border-radius:8px;background:linear-gradient(135deg,#112635,#1a2f2b);display:flex;align-items:center;justify-content:center;font-weight:800;color:var(--accent);font-size:1.05rem}
+.site-title{font-weight:800;color:var(--accent);text-transform:lowercase}
+.nav{display:flex;gap:12px}
+.nav a{padding:8px 10px;border-radius:8px;color:var(--muted);text-decoration:none;font-weight:700}
+.nav a:hover{background:rgba(155,225,93,0.06);color:var(--accent)}
+.container{max-width:1100px;margin:28px auto;padding:0 18px}
+.hero{display:grid;grid-template-columns:1fr 320px;gap:20px;align-items:center;margin-bottom:28px}
+.hero-card{background:linear-gradient(180deg,rgba(255,255,255,0.02),rgba(255,255,255,0.01));padding:20px;border-radius:12px;border:1px solid rgba(255,255,255,0.03);box-shadow:0 10px 30px rgba(2,6,23,0.5)}
+.hero h1{margin:0;font-size:2rem;color:var(--accent);text-transform:lowercase}
+.hero p{color:var(--muted);margin-top:10px;line-height:1.6}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;margin-top:12px}
+.card{background:var(--card);padding:14px;border-radius:12px;border:1px solid rgba(255,255,255,0.02);box-shadow:0 8px 24px rgba(0,0,0,0.5)}
+.card h3{margin:0;color:var(--accent);font-size:1.05rem;text-transform:lowercase}
+.card p{color:var(--muted);margin-top:8px;line-height:1.4}
+.product-row{display:grid;grid-template-columns:1fr 320px;gap:18px;align-items:start}
+.meta{padding:6px 0}
+.order-btn{display:inline-block;padding:12px 16px;border-radius:10px;background:var(--accent);color:#06120a;text-decoration:none;font-weight:800;cursor:pointer;border:none}
+.small{font-size:0.9rem;padding:8px 12px;border-radius:8px;background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.03)}
+.footer{margin:36px 0 80px;padding:18px 0;text-align:center;color:var(--muted);border-top:1px solid rgba(255,255,255,0.02)}
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:12px}
+.thumb{background:linear-gradient(180deg,rgba(255,255,255,0.02),rgba(255,255,255,0.01));height:140px;border-radius:10px;display:flex;align-items:center;justify-content:center;color:var(--muted);font-weight:700;padding:8px;text-align:center}
+.modal-back{position:fixed;inset:0;background:rgba(0,0,0,0.5);display:none;align-items:center;justify-content:center;z-index:200}
+.modal{background:linear-gradient(180deg,#0b1117,#0d1620);padding:18px;border-radius:10px;max-width:520px;width:92%;border:1px solid rgba(255,255,255,0.03)}
+.cart-row{display:flex;justify-content:space-between;align-items:center;padding:8px 0;border-bottom:1px dashed rgba(255,255,255,0.02)}
+@media (max-width:880px){.hero{grid-template-columns:1fr}.product-row{grid-template-columns:1fr}}
